@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<div class="navbar navbar-inverse navbar-fixed-top navbar-my">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">BenzShop</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+{#                <li class="active"><a href="index.html">Головна</a></li>#}
+{#                <li><a href="#">Меню</a></li>#}
+{#                <li><a href="#">Напої</a></li>#}
+{#                <li><a href="#">Кальянна карта</a></li>#}
+{#                <li><a href="#">Контакти</a></li>#}
+                {% if request.user.is_authenticated %}
+                    <li>
+                        <a class="exit-button" href="{% url 'main:logout' %}">Вихід</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-secondary btn-lg"
+                                disabled>{{ request.user.username }}</button>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{% url 'main:signup' %}">Реєстрація</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'main:login' %}"> Вхід </a>
+                    </li>
+
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+.navbar{
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.navbar-inverse{
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+.navbar-my ul li a{
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar-brand{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/*---FOOTER---*/
+.footer {
+    padding: 20px 0 10px 0;
+    background-color: #0bbbef;
+    color: black;
+}
+.footer .title{
+	text-align: left;
+	color:black;
+	font-size:25px;
+}
+.footer .social-icon{
+    text-align: center;
+	padding:0px;
+	margin:0px;
+}
+.footer .social-icon a{
+	display:inline-block;
+	color:white;
+	font-size:25px;
+	padding:15px;
+}

@@ -1,0 +1,220 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Садовий шланг X-Hose</title>
+    <meta name="description"
+          content="Шланг Xhose це шланг для поливу який сам здатний розтягуватись. Купити шланг з доставкою">
+    <link rel="shortcut icon" href="{% static 'media/favicon.png' %}">
+    <meta name="keywords" content="Шланг іксхоз xhose x-hose садовий для поливу купити дешево">
+    <link rel="stylesheet" href="{% static 'main/xhose.css' %}">
+    <script src="{% static 'main/script.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+    <div class="[ container ]">
+        <div class="[ navbar-header ]">
+            <button type="button" class="[ navbar-toggle ]" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="[ sr-only ]">Toggle navigation</span>
+                <span class="[ icon-bar ]"></span>
+                <span class="[ icon-bar ]"></span>
+                <span class="[ icon-bar ]"></span>
+            </button>
+            <div class="[ animbrand ]">
+                <a class="[ navbar-brand ][ animate ] logo" href="{% url 'xhose:xhose' %}">X-Hose</a>
+            </div>
+        </div>
+        <div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+            <ul class="[ nav navbar-nav navbar-right ]">
+                <li><a href="#delivery">Про доставку</a></li>
+                <li><a href="#buy">Замовити</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid first">
+    <div class="row">
+        <div class="paragraph col-lg-8 col-lg-offset-2">
+            ЛЕГЕНДАРНИЙ ШЛАНГ ДЛЯ ПОЛИВУ X-HOSE
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-6 first-left">
+        <img src="{% static 'media/back1.png' %} " class="sale-picture">
+    </div>
+    <div class="col-lg-6 col-sm-6 first-right">
+        <i class="fas fa-gift"> НАСАДКА В ПОДАРУНОК</i><br>
+        <i class="fas fa-plane"> ПРЯМІ ПОСТАВКИ ІЗ ЗАВОДУ</i><br>
+        <i class="fas fa-weight-hanging"> МІЦНИЙ І ЗНОСОСТІЙКИЙ</i><br>
+        <i class="fas fa-truck"> ДОСТАВКА В УСІ РЕГІОНИ УКРАЇНИ</i><br>
+    </div>
+</div>
+<div class="container second">
+    <div class="row">
+        <div class="col-lg-6 col-6 nasadka-left">
+            <h2>Насадка для поливу</h2>
+            <hr>
+            <p>У насадки 7 режимів работи: shower, full, center, cone, jet, flat, mist. Режими поливу переключаються
+                простим поворотом кільця. Ручка с ребристою ручкою, її приємно тримати і вона не висковзує, коли
+                намокне.</p>
+        </div>
+        <div class="col-lg-6 col-sm-6 nasadka-right">
+            <img src="{% static 'media/nasadka.gif' %} " class="nasadka-picture">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6 col-sm-6 shlang-left">
+            <img src="{% static 'media/shlang.gif' %} " class="shlang-picture">
+        </div>
+        <div class="col-lg-6 col-sm-6 shlang-right">
+            <h2>Саморозтягуючийся шланг</h2>
+            <hr>
+            <p>Шланг для поливу Xhose це чудо шланг (magic hose). На відміну від звичайних шлангів
+                для поливу, чудо шланг X-HOSE в 5 разів легший, аніж резиновий шланг відповідної довжини. Він не
+                перекручуюється і не ломається. Коли ви включаєте воду, готуючись до поливу, xhose розтягується втричі в
+                довжині.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-6 col-sm-6 compound-left">
+            <h2>Швидкоз'ємне з'єднання</h2>
+            <hr>
+            <p>Шланг Xhose підключаєтся через швидкоз'ємне з'єднання, з однієї сторони до посадки для поливу, а з іншої
+                сторони до перехідника на кран (трубу). Просто вставте насадку в шланг і вона надійно застібнеться.
+                Також
+                підключається шланг до перехідника для крану або ж до самої системи поливу, якшо ваші точки підключення
+                вже
+                обладнанні швидкоз'ємними зєднаннями.
+        </div>
+        <div class="col-lg-6 col-sm-6 compound-right">
+            <img src="{% static 'media/compound.gif' %} " class="compound-picture">
+        </div>
+    </div>
+</div>
+<a name="delivery"></a>
+<div class="container third">
+    <div class="row">
+        <div class="col-lg-12 paragraph">
+            <h1>Про доставку</h1>
+        </div>
+        <hr>
+        <div class="col-md-3 col-xs-6 delivery">
+            <img src="{% static 'media/delivery1.jpg' %} " class="delivery-picture">
+            <div>
+                <p><i class="fa fa-keyboard-o fa-lg thumb"></i>
+                    Ви залишаєте заявку на сайті</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6 delivery">
+            <img src="{% static 'media/delivery2.jpg' %} " class="delivery-picture">
+            <div>
+                <p><i class="fa fa-phone fa-lg thumb"></i>
+                    Менеджер звязується з вами для підтвердження замовлення</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6 delivery">
+            <img src="{% static 'media/delivery3.jpg' %} " class="delivery-picture">
+            <div>
+                <p><i class="fa fa-truck fa-lg thumb"></i>
+                    Ми швидко відправляємо Вам замовлення Новою Поштою</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-6 delivery">
+            <img src="{% static 'media/delivery4.jpg' %} " class="delivery-picture">
+            <div>
+                <p><i class="fa fa-thumbs-o-up fa-lg thumb"></i>
+                    Ви отимуєте свій товар і оплачуєте його но пошті</p>
+            </div>
+        </div>
+    </div>
+</div>
+<a name="buy"></a>
+<div class="container-fluid buy">
+    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 buy-paragraph">
+        <h2>Шланг X-Hose</h2>
+    </div>
+    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 buy-picture-bg">
+        <img src="{% static 'media/hose.png' %} " class="buy-picture">
+    </div>
+    <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 buy-button">
+        <h2><i class="fa fa-check" style="color: green">Насадка для поливу</i></h2>
+        <hr>
+        <h2><i class="fa fa-check" style="color: green">Надміцний і зносостійкий</i></h2>
+        <hr>
+        <h2><i class="fa fa-check" style="color: green">Сам розтягується</i></h2>
+        <hr>
+        <div class="row">
+            <div class="col-xs-6 price">
+                <h4>30м-200грн.</h4>
+            </div>
+            <div class="col-xs-6 price">
+                <h4>45м-250грн.</h4>
+            </div>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-primary btn-lg buy-btn" data-toggle="modal" data-target="#myModal">
+            Купити
+        </button>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Оформлення замовлення</h4>
+            </div>
+            <div class="modal-body">
+                <form action="{% url 'app:xhose' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group form-name">
+                        <p><label for="id_name">Ім'я </label>
+                            <input id="id_name" type="text" name="name" placeholder="Ваше ім'я" required></p>
+                    </div>
+                    <div class="form-group form-phone">
+                        <p><label for="id_phone">Тел. </label>
+                            <input id="id_phone" type="text" name="phone" placeholder="Ваш контактний номер телефону"
+                                   required>
+                        </p>
+                    </div>
+                    <div class="form-group form-promo">
+                        <p><label for="id_promo">Промо-код</label>
+                            <input id="id_promo" type="text" name="promo" placeholder="(Вкажіть якщо такий є)"></p>
+                    </div>
+                    <button type="submit" class="form-save btn btn-success" name="submit">
+                        Замовити
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>© 2014-{% now "Y" %}<a class="syte-link" href="#"> X-HOSE</a> All rights reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+{#    <script src="{% static 'js/script.js' %}"></script>#}
+</body>
+</html>
